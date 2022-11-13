@@ -11,6 +11,8 @@
 /* цвет фона кнопок  #f5f4fa */
 /* цвет фона футер #2f303a */
 /* цвет рамки хедера  #ececec*/
+/* цвет рамки карты портфолио #eeeeee */
+/* тени навигации портфолио rgba(0, 0, 0, 0.25) */
 /* тени карта команда 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2); */
 /* цвет адреса подвал  rgba(255, 255, 255, 0.6) */
@@ -30,6 +32,8 @@
   --background-footer: #2f303a;
   --background-color-button: #f5f4fa;
   --border-color-header: #ececec;
+  --border-color-card: #eeeeee;
+  --nav-portfolio-shadow: rgba(0, 0, 0, 0.25);
   --card-team-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   --text-adress-color: rgba(255, 255, 255, 0.6);
@@ -56,7 +60,7 @@ body {
 .container {
   margin-left: auto;
   margin-right: auto;
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
@@ -218,6 +222,7 @@ header .logo {
 
 .section-features {
   padding-top: 94px;
+  padding-bottom: 94px;
 }
 .section-features h2 {
   position: absolute;
@@ -233,26 +238,23 @@ header .logo {
   overflow: hidden;
 }
 
-.features {
-  padding-left: 0;
-  /* outline: 2px solid tomato; */
-}
 .section-features .features {
   display: flex;
+  padding-left: 0;
+
+  /* outline: 2px solid tomato; */
 }
 
 .features .item {
+  width: 270px;
   text-align: left;
   margin-left: 30px;
+
+  /* outline: 2px solid teal; */
 }
 
 .features .item:first-child {
   margin-left: 0;
-}
-.features .item:first-clild,
-.features .item:last-child {
-  margin-left: 15px;
-  margin-right: 15px;
 }
 
 .section-features .features-title {
@@ -265,7 +267,6 @@ header .logo {
 
 /* сфера деятельности */
 .section-scope {
-  padding-top: 94px;
   padding-bottom: 94px;
 }
 
@@ -316,7 +317,6 @@ header .logo {
 .section-team .team-card {
   display: flex;
   padding-left: 0;
-  justify-content: space-between;
 }
 
 .team-card > .card-item {
@@ -401,7 +401,7 @@ header .logo {
 .portfolio-nav .portfolio-btn:focus {
   background-color: var(--accent-color);
   color: var(--text-change-color);
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  box-shadow: 0px 4px 4px var(--nav-portfolio-shadow);
 }
 
 /* портфолио основная инфа */
@@ -410,7 +410,6 @@ img {
   max-width: 100%;
 }
 .cards-info {
-  width: 1170px;
   padding: 0;
   margin: 0;
   display: flex;
@@ -425,12 +424,13 @@ img {
 
   margin-left: 30px;
   margin-top: 30px;
-
-  border-bottom: 1px solid #eeeeee;
 }
 .card-content {
   padding: 20px 24px;
   text-align: left;
+  border-left: 1px solid var(--border-color-card);
+  border-right: 1px solid var(--border-color-card);
+  border-bottom: 1px solid var(--border-color-card);
 }
 
 .section-portfolio .card-title {

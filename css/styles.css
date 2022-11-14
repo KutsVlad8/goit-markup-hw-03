@@ -63,7 +63,6 @@ body {
   width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: center;
 }
 
 /* header */
@@ -75,13 +74,11 @@ header {
 .header {
   display: flex;
   align-items: center;
-
-  padding-top: 24px;
-  padding-bottom: 24px;
 }
 
 .logo {
-  margin-left: 15px;
+  padding-top: 24px;
+  padding-bottom: 24px;
 
   font-family: 'Raleway', sans-serif;
   font-weight: 700;
@@ -121,6 +118,9 @@ header .logo {
 }
 
 .site-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--text-nav-color);
   font-weight: 500;
   font-size: 14px;
@@ -133,6 +133,9 @@ header .logo {
 }
 
 .site-nav .studoi {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
@@ -140,6 +143,9 @@ header .logo {
   letter-spacing: 0.02em;
 }
 .site-nav .portfolio {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
@@ -147,6 +153,9 @@ header .logo {
   letter-spacing: 0.02em;
 }
 .site-nav .contact {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--accent-color);
   font-weight: 500;
   font-size: 14px;
@@ -169,6 +178,9 @@ header .logo {
   margin-left: 0;
 }
 .auth-nav .link {
+  padding-top: 32px;
+  padding-bottom: 32px;
+
   color: var(--primary-text-color);
   font-weight: 500;
   font-size: 14px;
@@ -182,41 +194,51 @@ header .logo {
 
 /* приветствие */
 .section-greeting {
+  padding-top: 200px;
+  padding-bottom: 200px;
+
   background-color: var(--background-color-hello);
 }
 .section-greeting h1 {
+  width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
+  margin-top: 0;
+
   color: var(--text-change-color);
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
-  text-align: center;
   letter-spacing: 0.06em;
   text-transform: uppercase;
-  margin-top: 0;
-  margin-bottom: 30px;
+  text-align: center;
 }
-.section-greeting .button {
-  background-color: var(--background-color-button);
-  color: var(--primary-heading-color);
+
+.section-greeting .container .button {
+  display: block;
+  min-width: 216px;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+
+  background-color: var(--accent-color);
+  color: var(--text-change-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   font-family: inherit;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.9;
-  align-items: center;
-  text-align: center;
   letter-spacing: 0.06em;
   cursor: pointer;
   border-radius: 4px;
-  border-style: none;
-  min-width: 216px;
-  padding: 10px 32px;
+  border: none;
 }
-.section-greeting .button:hover,
+/* .section-greeting .button:hover,
 .section-greeting .button:focus {
   background-color: var(--accent-color);
   color: var(--text-change-color);
-}
+} */
 
 /* особенности */
 
@@ -258,11 +280,12 @@ header .logo {
 }
 
 .section-features .features-title {
+  margin-top: 0;
+  margin-bottom: 10px;
+
   color: var(--primary-heading-color);
   font-weight: 700;
   line-height: 1.14;
-  margin-top: 0;
-  margin-bottom: 10px;
 }
 
 /* сфера деятельности */
@@ -270,37 +293,37 @@ header .logo {
   padding-bottom: 94px;
 }
 
-.section-scope .container .content {
+.section-scope .container .scope-content {
   display: flex;
   padding-left: 0;
   justify-content: space-between;
 }
 
-.content > .item {
+.scope-content > .content-item {
   margin-left: 30px;
 }
 
-.content > .item:first-child {
+.scope-content > .content-item:first-child {
   margin-left: 0;
 }
 
-.section-scope .section-activity {
+.section-scope .scope-title {
+  margin-top: 0;
+  margin-bottom: 50px;
+
   color: var(--primary-heading-color);
   font-weight: 700;
   font-size: 36px;
   line-height: 1.16;
-  margin-top: 0;
-  margin-bottom: 50px;
+  text-align: center;
 }
 
 /* наша команда */
 .section-team {
-  background-color: var(--background-color-team);
-}
-
-.team {
   padding-top: 94px;
   padding-bottom: 94px;
+
+  background-color: var(--background-color-team);
 }
 
 .section-team .title-team {
@@ -331,21 +354,24 @@ header .logo {
   margin-left: 0;
 }
 .section-team .card-title {
+  margin-bottom: 0;
+  margin-top: 30px;
+  text-align: center;
+
   color: var(--primary-heading-color);
   font-weight: 500;
   font-size: 16px;
   line-height: 1.19;
-  margin-top: 30px;
-  text-align: center;
 }
 
 .section-team .card-text {
-  color: var(--primary-text-color);
-  font-size: 16px;
-  line-height: 1.19;
   margin-top: 10px;
   margin-bottom: 30px;
   text-align: center;
+
+  color: var(--primary-text-color);
+  font-size: 16px;
+  line-height: 1.19;
 }
 
 /* портфолио заголовок */
@@ -373,6 +399,9 @@ header .logo {
   display: flex;
   justify-content: center;
   padding: 0;
+
+  margin-top: 0;
+  margin-bottom: 50px;
 }
 
 .portfolio-nav .portfolio-btn {
@@ -391,7 +420,6 @@ header .logo {
 
 .portfolio-nav .nav-item {
   margin-left: 8px;
-  padding-bottom: 34px;
 }
 .portfolio-nav .nav-item:first-child {
   margin-left: 0;
@@ -414,41 +442,40 @@ img {
   margin: 0;
   display: flex;
   flex-wrap: wrap;
+  gap: 30px;
 
-  margin-left: -30px;
-  margin-top: -30px;
+  /* margin-left: -30px;
+  margin-top: -30px; */
 }
 
 .cards-info > .card {
-  flex-basis: calc(100% / 3 - 30px);
-
-  margin-left: 30px;
-  margin-top: 30px;
+  flex-basis: calc((100% - 60px) / 3);
 }
 .card-content {
   padding: 20px 24px;
-  text-align: left;
   border-left: 1px solid var(--border-color-card);
   border-right: 1px solid var(--border-color-card);
   border-bottom: 1px solid var(--border-color-card);
 }
 
 .section-portfolio .card-title {
+  margin-top: 0;
+  margin-bottom: 4px;
+
   color: var(--primary-heading-color);
   font-weight: 700;
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
-  margin-top: 0;
-  margin-bottom: 4px;
 }
 
 .section-portfolio .card-text {
+  margin-top: 0;
+  margin-bottom: 0;
+
   color: var(--primary-text-color);
   font-size: 16px;
   line-height: 1.9;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 
 /* footer */
@@ -460,15 +487,16 @@ footer {
 .footer {
   padding-top: 60px;
   padding-bottom: 60px;
-
-  text-align: left;
 }
 
 .footer .logo {
-  color: var(--footer-logo-color);
-  display: inline-block;
+  padding-top: 0px;
+  padding-bottom: 0;
   margin-bottom: 20px;
   margin-left: 0;
+
+  color: var(--footer-logo-color);
+  display: inline-block;
 }
 
 .footer address {

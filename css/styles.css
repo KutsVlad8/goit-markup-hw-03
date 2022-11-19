@@ -6,7 +6,7 @@
 /* цвет лого       #000000 */
 /* акцент цвета лого   #2196F3*/
 /* цвет акцента    #2196F3*/
-/* цвет фона приветствие  #2F303A; */
+/* цвет фона приветствие  #C4C4C4; */
 /* цвет фона команда #F5F4FA;*/
 /* цвет фона кнопок  #f5f4fa */
 /* цвет фона футер #2f303a */
@@ -27,7 +27,7 @@
   --text-color-map: #ffffff;
   --text-nav-color: #212121;
   --background-color: #ffffff;
-  --background-color-hello: #2f303a;
+  --background-color-hello: #c4c4c4;
   --background-color-team: #f5f4fa;
   --background-footer: #2f303a;
   --background-color-button: #f5f4fa;
